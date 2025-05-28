@@ -1,0 +1,6 @@
+Wallet_UMMIY99KEMDSWUK3.zip
+.env
+db.sqlite3
+cinedk/__pycache__/*
+/apps/address/__pycache__/*
+/apps/address/migrations/*
