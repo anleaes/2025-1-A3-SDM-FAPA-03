@@ -1,5 +1,6 @@
+Wallet_UMMIY99KEMDSWUK3.zip
 .env
 db.sqlite3
 cinedk/__pycache__/*
-/apps/categories/__pycache__/*
-/apps/categories/migrations/*
+/apps/address/__pycache__/*
+/apps/address/migrations/*
