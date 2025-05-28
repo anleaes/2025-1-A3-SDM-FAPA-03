@@ -1,0 +1,5 @@
+.env
+db.sqlite3
+cinedk/__pycache__/*
+/apps/categories/__pycache__/*
+/apps/categories/migrations/*
