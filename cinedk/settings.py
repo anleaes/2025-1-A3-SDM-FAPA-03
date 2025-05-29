@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'address.apps.AddressConfig',
     'movie.apps.MovieConfig',
+    'client.apps.ClientConfig',
 ]
 
 MIDDLEWARE = [
