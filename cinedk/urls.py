@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('enderecos/', include('address.urls', namespace='enderecos')),
     path('filmes/', include('movie.urls', namespace='filmes')),
+    path('clientes/', include('client.urls', namespace='clientes')),
 ]
 
 #declararando a pasta caminho e raiz para arquivos que sera enviados 
