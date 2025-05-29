@@ -7,3 +7,5 @@ cinedk/__pycache__/*
 /apps/address/migrations/*
 /apps/movie/__pycache__/*
 /apps/movie/migrations/*
+/apps/client/__pycache__/*
+/apps/client/migrations/*
