@@ -7,8 +7,8 @@ class Address(models.Model):
     state = models.CharField('Estado', max_length=2)
 
     class Meta:
-        verbose_name = 'Endereço'
-        verbose_name_plural = 'Endereços'
+        verbose_name = 'Endereco'
+        verbose_name_plural = 'Enderecos'
         ordering = ['id']
     
     def __str__(self):
