@@ -1,3 +1,4 @@
-from django.shortcuts import render
+from .models import Theater
+from rest_framework import viewsets
+from .serializer import TheaterSerializer
 
-# Create your views here.
