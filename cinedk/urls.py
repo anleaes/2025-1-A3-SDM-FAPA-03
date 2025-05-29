@@ -26,6 +26,7 @@ urlpatterns = [
     path('clientes/', include('client.urls', namespace='clientes')),
     path('ingressos/', include('ticket.urls', namespace='ingressos')),
     path('cinemas/', include('theater.urls', namespace='cinemas')),
+    path('pedidos/', include('order.urls', namespace='pedidos')),
 ]
 
 #declararando a pasta caminho e raiz para arquivos que sera enviados 
