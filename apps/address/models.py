@@ -10,3 +10,6 @@ class Address(models.Model):
         verbose_name = 'Endereço'
         verbose_name_plural = 'Endereços'
         ordering = ['id']
+    
+    def __str__(self):
+        return f'{self.street}, {self.number} - {self.city}/{self.state}'
