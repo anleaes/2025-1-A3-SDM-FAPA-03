@@ -22,6 +22,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('enderecos/', include('address.urls', namespace='enderecos')),
+    path('filmes/', include('movie.urls', namespace='filmes')),
 ]
 
 #declararando a pasta caminho e raiz para arquivos que sera enviados 
