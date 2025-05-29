@@ -9,3 +9,5 @@ cinedk/__pycache__/*
 /apps/movie/migrations/*
 /apps/client/__pycache__/*
 /apps/client/migrations/*
+/apps/ticket/__pycache__/*
+/apps/ticket/migrations/*
