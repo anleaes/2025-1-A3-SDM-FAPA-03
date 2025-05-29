@@ -5,3 +5,5 @@ db.sqlite3
 cinedk/__pycache__/*
 /apps/address/__pycache__/*
 /apps/address/migrations/*
+/apps/movie/__pycache__/*
+/apps/movie/migrations/*
