@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'client.apps.ClientConfig',
     'ticket.apps.TicketConfig',
     'theater.apps.TheaterConfig',
+    'order.apps.OrderConfig',
 ]
 
 MIDDLEWARE = [

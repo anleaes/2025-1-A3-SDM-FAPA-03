@@ -13,3 +13,5 @@ cinedk/__pycache__/*
 /apps/ticket/migrations/*
 /apps/theater/__pycache__/*
 /apps/theater/migrations/*
+/apps/order/__pycache__/*
+/apps/order/migrations/*
