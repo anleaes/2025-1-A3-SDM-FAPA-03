@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'movie.apps.MovieConfig',
     'client.apps.ClientConfig',
     'ticket.apps.TicketConfig',
+    'theater.apps.TheaterConfig',
 ]
 
 MIDDLEWARE = [
