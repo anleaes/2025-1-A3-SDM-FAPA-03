@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'ticket.apps.TicketConfig',
     'theater.apps.TheaterConfig',
     'gender.apps.GenderConfig',
+    'room.apps.RoomConfig',
 ]
 
 MIDDLEWARE = [

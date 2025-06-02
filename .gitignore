@@ -13,3 +13,5 @@ cinedk/__pycache__/*
 /apps/theater/migrations/*
 /apps/gender/__pycache__/*
 /apps/gender/migrations/*
+/apps/room/__pycache__/*
+/apps/room/migrations/*
