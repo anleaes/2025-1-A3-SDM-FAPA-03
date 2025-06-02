@@ -15,3 +15,7 @@ cinedk/__pycache__/*
 /apps/gender/migrations/*
 /apps/room/__pycache__/*
 /apps/room/migrations/*
+/apps/session/__pycache__/*
+/apps/session/migrations/*
+/apps/sessionticket/__pycache__/*
+/apps/sessionticket/migrations/*
