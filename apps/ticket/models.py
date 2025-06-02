@@ -1,20 +1,31 @@
 from django.db import models
-from movie.models import Movie
+from client.models import Client
+
 
 class Ticket(models.Model):
-    unitary_price = models.DecimalField('Preço Unitário', max_digits=6, decimal_places=2)
-    movie = models.ForeignKey(Movie, on_delete=models.CASCADE, verbose_name='Filme')
-    room = models.IntegerField('Sala')
+    total_price = models.DecimalField(
+        'Preço Total', max_digits=6, decimal_places=2)
 
-    RATING_CHOICES = (
+    payment_method = models.CharField('Forma de Pagamento', max_length=30, default='pix', choices=[
+        ('boleto', 'Boleto'),
+        ('cartao', 'Cartão de Crédito'),
+        ('pix', 'PIX'),
+    ])
+    status = models.CharField('Status', max_length=20, default='pendente', choices=[
+        ('pendente', 'Pendente'),
+        ('pago', 'Pago'),
+        ('cancelado', 'Cancelado'),
+    ])
+
+    rating = models.CharField('Classificação', max_length=2, default='L', choices=[
         ('L', 'Livre (todas as idades)'),
         ('10', '10 anos'),
         ('12', '12 anos'),
         ('14', '14 anos'),
         ('16', '16 anos'),
         ('18', '18 anos'),
-    )
-    rating = models.CharField('Classificação', max_length=2, choices=RATING_CHOICES)
+    ])
+    client = models.ForeignKey(Client, on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = 'Ingresso'

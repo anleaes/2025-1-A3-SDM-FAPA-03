@@ -1,10 +1,8 @@
-Wallet_UMMIY99KEMDSWUK3.zip
+Wallet_SFJM3LMXPWJBQYZH.zip
 .env
 db.sqlite3
 /diagram/mermaidCode
 cinedk/__pycache__/*
-/apps/address/__pycache__/*
-/apps/address/migrations/*
 /apps/movie/__pycache__/*
 /apps/movie/migrations/*
 /apps/client/__pycache__/*
@@ -13,7 +11,5 @@ cinedk/__pycache__/*
 /apps/ticket/migrations/*
 /apps/theater/__pycache__/*
 /apps/theater/migrations/*
-/apps/order/__pycache__/*
-/apps/order/migrations/*
-/apps/ordertickets/__pycache__/*
-/apps/ordertickets/migrations/*
+/apps/gender/__pycache__/*
+/apps/gender/migrations/*
