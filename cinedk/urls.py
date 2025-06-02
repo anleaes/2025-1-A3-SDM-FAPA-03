@@ -21,13 +21,10 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('enderecos/', include('address.urls', namespace='enderecos')),
     path('filmes/', include('movie.urls', namespace='filmes')),
     path('clientes/', include('client.urls', namespace='clientes')),
     path('ingressos/', include('ticket.urls', namespace='ingressos')),
     path('cinemas/', include('theater.urls', namespace='cinemas')),
-    path('pedidos/', include('order.urls', namespace='pedidos')),
-    path('ingressos_pedido/', include('ordertickets.urls', namespace='ingressos_pedido')),
 ]
 
 #declararando a pasta caminho e raiz para arquivos que sera enviados 

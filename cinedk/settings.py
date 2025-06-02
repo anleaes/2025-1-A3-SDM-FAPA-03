@@ -42,13 +42,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'address.apps.AddressConfig',
     'movie.apps.MovieConfig',
     'client.apps.ClientConfig',
     'ticket.apps.TicketConfig',
     'theater.apps.TheaterConfig',
-    'order.apps.OrderConfig',
-    'ordertickets.apps.OrderticketsConfig',
+    'gender.apps.GenderConfig',
 ]
 
 MIDDLEWARE = [

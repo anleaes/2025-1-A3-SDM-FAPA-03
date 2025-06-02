@@ -1,5 +1,5 @@
 from django.db import models
-from address.models import Address
+
 class Client(models.Model):
     email = models.EmailField('E-mail', null=False, blank=False)
     name = models.CharField('Nome', max_length=100)
@@ -11,8 +11,6 @@ class Client(models.Model):
         ('O', 'Outro'),
     )
     gender = models.CharField('Gênero', max_length=1, choices=GENDER_CHOICES)
-
-    addresses = models.ManyToManyField(Address, verbose_name='Endereços')
 
     class Meta:
         verbose_name = 'Cliente'
