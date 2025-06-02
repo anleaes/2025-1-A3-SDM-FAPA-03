@@ -25,7 +25,7 @@ class Ticket(models.Model):
         ('16', '16 anos'),
         ('18', '18 anos'),
     ])
-    client = models.ForeignKey(Client, on_delete=models.CASCADE)
+    client = models.ForeignKey(Client, on_delete=models.CASCADE, verbose_name='Cliente')
 
     class Meta:
         verbose_name = 'Ingresso'
