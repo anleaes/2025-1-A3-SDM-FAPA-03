@@ -1,12 +1,12 @@
 from django.db import models
-
-from django.db import models
+from session.models import Session
+from ticket.models import Ticket
 
 class SessionTicket(models.Model):
-    session = models.ForeignKey('Session', on_delete=models.CASCADE, verbose_name='Sessão')
-    ticket = models.ForeignKey('Ticket', on_delete=models.CASCADE, verbose_name='Ingresso')
+    session = models.ForeignKey(Session, on_delete=models.CASCADE, verbose_name='Sessão')
+    ticket = models.ForeignKey(Ticket, on_delete=models.CASCADE, verbose_name='Ingresso')
     quantity = models.PositiveIntegerField('Quantidade')
-    unitary_price = models.DecimalField('Preço Unitário', max_digits=6, decimal_places=2)
+    unitary_price = models.DecimalField('Preço Unitário', max_digits=8, decimal_places=2)
 
     class Meta:
         verbose_name = 'Ingresso da Sessão'
@@ -14,5 +14,5 @@ class SessionTicket(models.Model):
         ordering = ['id']
 
     def __str__(self):
-        return f'{self.quantity}x {self.ticket.movie.title} - Sessão {self.session.id}'
+        return f'{self.ticket.client.name} - Sessão {self.session.movie.title}'
 

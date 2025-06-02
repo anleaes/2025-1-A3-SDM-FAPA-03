@@ -1,7 +1,6 @@
 from django.db import models
 from client.models import Client
 
-
 class Ticket(models.Model):
     total_price = models.DecimalField(
         'Preço Total', max_digits=6, decimal_places=2)
@@ -33,4 +32,4 @@ class Ticket(models.Model):
         ordering = ['id']
 
     def __str__(self):
-        return f'{self.movie.title} - Sala {self.room}'
+        return f'Cod. {self.id} - Pagamento {self.status}'
