@@ -1,7 +1,5 @@
 from django.db import models
 
-from django.db import models
-
 class Gender(models.Model):
     POPULARITY_CHOICES = (
         ('B', 'Baixa'),
