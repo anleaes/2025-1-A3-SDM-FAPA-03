@@ -6,7 +6,7 @@ class SessionTicket(models.Model):
     session = models.ForeignKey(Session, on_delete=models.CASCADE, verbose_name='Sessão')
     ticket = models.ForeignKey(Ticket, on_delete=models.CASCADE, verbose_name='Ingresso')
     quantity = models.PositiveIntegerField('Quantidade')
-    unitary_price = models.DecimalField('Preço Unitário', max_digits=8, decimal_places=2)
+    unitaryPrice = models.DecimalField('Preço Unitário', max_digits=8, decimal_places=2)
 
     class Meta:
         verbose_name = 'Ingresso da Sessão'

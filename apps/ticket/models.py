@@ -2,10 +2,10 @@ from django.db import models
 from client.models import Client
 
 class Ticket(models.Model):
-    total_price = models.DecimalField(
+    totalPrice = models.DecimalField(
         'Preço Total', max_digits=6, decimal_places=2)
 
-    payment_method = models.CharField('Forma de Pagamento', max_length=30, default='pix', choices=[
+    paymentMethod = models.CharField('Forma de Pagamento', max_length=30, default='pix', choices=[
         ('boleto', 'Boleto'),
         ('cartao', 'Cartão de Crédito'),
         ('pix', 'PIX'),

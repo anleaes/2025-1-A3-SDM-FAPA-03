@@ -9,7 +9,7 @@ class Gender(models.Model):
 
     name = models.CharField('Nome', max_length=50)
     description = models.TextField('Descrição', max_length=200)
-    is_active = models.BooleanField('Ativo', default=True)
+    isActive = models.BooleanField('Ativo', default=True)
     popularity = models.CharField('Popularidade', max_length=1, choices=POPULARITY_CHOICES)
 
     class Meta:
