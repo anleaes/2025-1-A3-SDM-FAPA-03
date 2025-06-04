@@ -3,7 +3,7 @@ from django.db import models
 class Client(models.Model):
     email = models.EmailField('E-mail', null=False, blank=False)
     name = models.CharField('Nome', max_length=100)
-    is_active = models.BooleanField('Ativo', default=True)
+    isActive = models.BooleanField('Ativo', default=True)
 
     GENDER_CHOICES = (
         ('M', 'Masculino'),
