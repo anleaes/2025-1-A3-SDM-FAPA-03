@@ -4,4 +4,4 @@ from rest_framework import serializers
 class TheaterSerializer(serializers.ModelSerializer):
     class Meta:
         model = Theater
-        fields = '__all__'
+        fields = ['id', 'name', 'openingHours', 'address', 'contactNumber']
