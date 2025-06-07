@@ -13,4 +13,4 @@ class SessionTicketSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = SessionTicket
-        fields = ['id', 'session', 'ticket', 'quantity', 'unitaryPrice', 'sessionDetail', 'ticketDetail']
+        fields = ['id', 'session', 'ticket', 'type', 'dateOfPurchase', 'sessionDetail', 'ticketDetail']
